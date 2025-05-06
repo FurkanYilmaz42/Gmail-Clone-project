@@ -9,12 +9,32 @@
   text-decoration: none;
 }
 
-.flexBox, .main-center .mails-area .mail .right, .main-center .mails-area .mail .center, .main-center .mails-area .mail .left, .main-center .top .right .keyboard, .main-center .top .right, .main-center .top .left .checkbox, .main-center .top .left, .main-center .top, .right-aside, .header-right, .header-search form, .header-left .logo, .header-left, .header {
+.flexBox,
+.main-center .mails-area .mail .right,
+.main-center .mails-area .mail .center,
+.main-center .mails-area .mail .left,
+.main-center .top .right .keyboard,
+.main-center .top .right,
+.main-center .top .left .checkbox,
+.main-center .top .left,
+.main-center .top,
+.right-aside,
+.header-right,
+.header-search form,
+.header-left .logo,
+.header-left,
+.header {
   display: flex;
   align-items: center;
 }
 
-.icon, .main-center .mails-area .mail .left i, .main-center .top .right i, .main-center .top .left i, .header-right i, .header-search form button, .header-left .menu i {
+.icon,
+.main-center .mails-area .mail .left i,
+.main-center .top .right i,
+.main-center .top .left i,
+.header-right i,
+.header-search form button,
+.header-left .menu i {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -23,7 +43,13 @@
   cursor: pointer;
   transition: all 0.5s;
 }
-.icon:hover, .main-center .mails-area .mail .left i:hover, .main-center .top .right i:hover, .main-center .top .left i:hover, .header-right i:hover, .header-search form button:hover, .header-left .menu i:hover {
+.icon:hover,
+.main-center .mails-area .mail .left i:hover,
+.main-center .top .right i:hover,
+.main-center .top .left i:hover,
+.header-right i:hover,
+.header-search form button:hover,
+.header-left .menu i:hover {
   background-color: #eaebef;
 }
 
@@ -219,7 +245,8 @@
 .modal-wrapper .modal-inner form label {
   margin-bottom: 10px;
 }
-.modal-wrapper .modal-inner form input, .modal-wrapper .modal-inner form textarea {
+.modal-wrapper .modal-inner form input,
+.modal-wrapper .modal-inner form textarea {
   border: 1px solid gray;
   border-radius: 4px;
   padding: 8px;
@@ -373,4 +400,4 @@ main {
 
 .bi-star-fill {
   color: #ece852;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

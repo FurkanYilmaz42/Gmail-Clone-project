@@ -1,65 +1,65 @@
 .left-aside {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  gap: 25px;
+
+  i {
+    @include xl {
+      font-size: 20px;
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  //! Create
+  .create {
+    background-color: $create-color;
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      box-shadow: 2px 2px 10px gray;
+    }
+  }
+
+  //! Middle
+  &-middle {
     display: flex;
     flex-direction: column;
-    padding: 13px;
-    gap: 25px;
-  
-    i {
-      @include xl {
-        font-size: 20px;
-        display: grid;
-        place-items: center;
-      }
-    }
-  
-    //! Create
-    .create {
-      background-color: $create-color;
-      padding: 20px;
-      display: flex;
-      gap: 12px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.5s ease;
-      
-      &:hover {
-        box-shadow: 2px 2px 10px gray;
-      }
-    }
-  
-    //! Middle
-    &-middle {
-      display: flex;
-      flex-direction: column;
-  
-      .active {
-        background-color: $active-color;
-        font-weight: bold;
-        border-radius: 0 20px 20px 0;
-      }
-  
-      a {
-        white-space: nowrap;
-        padding: 7px 12px 7px 26px;
-        display: flex;
-        gap: 12px;
-        transition: all 0.5s ease;
-        
-        &:hover {
-          background-color: $hover-effect;
-          border-radius: 0 20px 20px 0;
-        }
-      }
+
+    .active {
+      background-color: $active-color;
+      font-weight: bold;
+      border-radius: 0 20px 20px 0;
     }
 
-    //! Bottom
-    &-bottom {
+    a {
+      white-space: nowrap;
+      padding: 7px 12px 7px 26px;
       display: flex;
-      align-items: center;
-      justify-content: space-between !important;
-  
-      i {
-        font-size: 20px;
+      gap: 12px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $hover-effect;
+        border-radius: 0 20px 20px 0;
       }
     }
   }
+
+  //! Bottom
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}

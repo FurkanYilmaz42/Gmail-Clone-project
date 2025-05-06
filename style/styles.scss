@@ -1,16 +1,16 @@
 //! Google Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 //! Css Reset
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
 
 //! Imports
 @import "./Base/variables";
@@ -22,40 +22,40 @@
 @import "./Components/modal";
 @import "./Components/main";
 
-//! Body 
+//! Body
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: $nav-background;
+  font-family: "Roboto", sans-serif;
+  background-color: $nav-background;
+}
+
+a {
+  color: $black-color;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 5fr 0.5fr;
+  height: 85vh;
+
+  @include lg {
+    grid-template-columns: auto 5fr;
   }
-  
-  a {
-    color: $black-color;
-  }
-  
-  main {
-    display: grid;
-    grid-template-columns: auto 5fr 0.5fr;
-    height: 85vh;
-    
+
+  .right-aside {
     @include lg {
-      grid-template-columns: auto 5fr;
-    }
-  
-    .right-aside {
-      @include lg {
-        display: none;
-      }
-    }
-  }
-  
-  .hide {
-    .create span,
-    .left-aside-middle span {
       display: none;
     }
   }
-  
-  .bi-star-fill {
-    color: #ece852;
+}
+
+.hide {
+  .create span,
+  .left-aside-middle span {
+    display: none;
   }
+}
+
+.bi-star-fill {
+  color: #ece852;
+}
