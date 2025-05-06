@@ -1,0 +1,105 @@
+.header {
+    @extend .flexBox;
+    justify-content: space-between;
+    padding: 20px;
+    height: 92px;
+    font-size: 21px;
+    gap: 20px;
+
+    //! Left side
+    &-left {
+        @extend .flexBox;
+        gap: 10px;
+
+        //! Menu
+        .menu {
+            i{
+                @extend .icon;
+            }
+        }
+
+        //! Logo
+        .logo {
+            cursor: pointer;
+            @extend .flexBox;
+            gap: 10px;
+
+            span {
+                @include xl {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    //! Search
+    &-search {
+        flex: 1;
+        
+        form {
+            @extend .flexBox;
+            justify-content: space-between;
+            background-color: $search-input;
+            padding: 6px 10px;
+            border-radius: 30px;
+            max-width: 560px;
+        
+        @include lg {
+            max-width: 400px;
+        }
+      
+        @include md {
+            max-width: 300px;
+        }
+
+        input {
+            width: 450px;
+            background: transparent;
+            font-size: 18px;
+        
+        @include lg {
+            width: 350px;
+        }
+        
+        @include md {
+            width: 150px;
+            font-size: 14px;
+        }
+        
+        }
+
+        button {
+            background: none;
+            
+            @extend .icon;
+            font-size: 18px;
+            
+            @include md {
+                font-size: 15px;
+            }
+        } 
+    }
+  }
+  
+    //! Right side
+    &-right {
+        
+        @extend .flexBox;
+        gap: 10px;
+        
+        i {
+            
+            @extend .icon;
+    
+            @include xl {
+            display: none;
+            }
+    }
+
+    img {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+    }
+  }
+}

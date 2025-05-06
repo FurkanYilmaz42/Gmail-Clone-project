@@ -1,0 +1,21 @@
+.right-aside {
+    @extend .flexBox;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+  
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    span {
+      width: 25px;
+      height: 1.5px;
+      background-color: gray;
+    }
+  
+    i {
+      font-size: 25px;
+    }
+  }

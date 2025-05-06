@@ -1,0 +1,61 @@
+//! Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+//! Css Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+  }
+
+//! Imports
+@import "./Base/variables";
+@import "./Base/mixin";
+@import "./Base/global";
+@import "./Components/header";
+@import "./Components/left-aside";
+@import "./Components/right-aside";
+@import "./Components/modal";
+@import "./Components/main";
+
+//! Body 
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: $nav-background;
+  }
+  
+  a {
+    color: $black-color;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: auto 5fr 0.5fr;
+    height: 85vh;
+    
+    @include lg {
+      grid-template-columns: auto 5fr;
+    }
+  
+    .right-aside {
+      @include lg {
+        display: none;
+      }
+    }
+  }
+  
+  .hide {
+    .create span,
+    .left-aside-middle span {
+      display: none;
+    }
+  }
+  
+  .bi-star-fill {
+    color: #ece852;
+  }

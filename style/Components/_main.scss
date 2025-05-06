@@ -1,0 +1,141 @@
+.main-center {
+    background-color: $mails-background;
+    border-radius: 8px;
+  
+    //! Top
+    .top {
+      @extend .flexBox;
+      justify-content: space-between;
+      padding: 5px 10px;
+      
+      //! Left
+      .left {
+        @extend .flexBox;
+        gap: 8px;
+        
+        .checkbox {
+          @extend .flexBox;
+          gap: 15px;
+          margin-right: 20px;
+          padding-left: 25px;
+        }
+  
+        i {
+          @extend .icon;
+        }
+      }
+  
+      //! Right
+      .right {
+        @extend .flexBox;
+        gap: 8px;
+        margin-right: 15px;
+        
+        @include md {
+          display: none;
+        }
+  
+        p {
+          white-space: nowrap;
+        }
+       
+        i {
+          @extend .icon;
+        }
+  
+        .keyboard {
+          @extend .flexBox;
+          @include lg {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    //! Mail Area
+    .mails-area {
+      .mail {
+        height: 41px;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        gap: 10px;
+        font-size: 16px;
+        background-color: $box-color;
+        padding: 10px;
+        border-bottom: 1px solid rgba(218, 218, 218);
+        transition: all 0.2s ease;
+        cursor: pointer;
+        
+        &:hover {
+          box-shadow: 0 0 10px rgb(211, 211, 211);
+        }
+        
+        &:hover > .right .mail-date {
+          display: none;
+        }
+        
+        &:hover > .right .delete {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+  
+          i {
+            display: block;
+          }
+        }
+  
+        .left {
+          @extend .flexBox;
+          gap: 10px;
+          padding-left: 25px;
+  
+          i {
+            @extend .icon;
+          }
+  
+          span {
+            width: 80px;
+          }
+        }
+  
+        .center {
+          @extend .flexBox;
+          gap: 10px;
+          font-size: 17px;
+          
+          .mail-title {
+            font-weight: bold;
+          }
+          
+          .mail-description {
+            width: 100%;
+            white-space: nowrap;
+           
+            @include md {
+              display: none;
+            }
+          }
+        }
+  
+        .right {
+          @extend .flexBox;
+          align-items: center;
+  
+          .mail-date {
+            white-space: nowrap;
+            font-size: 15px;
+          }
+  
+          .delete {
+            font-size: 17px;
+            cursor: pointer;
+            
+            i {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
