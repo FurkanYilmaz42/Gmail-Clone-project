@@ -19,6 +19,7 @@ This project demonstrates a realistic email client experience, including:
 
 
 🧩 Features
+
 ✅ Hamburger Menu:
 Smooth toggle sidebar navigation for folders (Inbox, Starred, Sent, etc.)
 
